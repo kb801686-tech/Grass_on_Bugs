@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grass on Bugs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#inicio"><img src="assets/grass-on-bugs-logo.png" alt="Logo Grass on Bugs"><span>Grass <i>on</i> Bugs</span></a>
+  <nav><a class="active" href="#inicio">Inicio</a><a href="#escanear">Escanear</a><a href="#explorar">Explorar</a><a href="#historial">Historial</a></nav>
+  <a class="small-button" href="#escanear">＋ Nuevo escaneo</a>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-copy">
+    <span class="eyebrow">● NATURALEZA + TECNOLOGÍA</span>
+    <h1>Pequeños insectos.<br><em>Grandes descubrimientos.</em></h1>
+    <p>Descubre qué insecto tienes frente a ti y aprende cómo se relaciona con las plantas que nos rodean.</p>
+    <div class="actions"><a class="button primary" href="#escanear">◎ Identificar insecto</a><a class="button secondary" href="#explorar">Explorar catálogo ↗</a></div>
+    <div class="note">✦ Aprende a observar la naturaleza con otros ojos.</div>
+  </div>
+  <div class="hero-art"><div class="halo"></div><img src="assets/grass-on-bugs-logo.png" alt="Mascota de Grass on Bugs"><span class="float-tag">● Explora. Identifica. Aprende.</span></div>
+</section>
+<section class="section" id="escanear">
+  <div class="heading"><div><span class="eyebrow">EMPIEZA AQUÍ</span><h2>¿Qué insecto encontraste?</h2><p>Sube una foto para preparar tu identificación.</p></div><span class="step">01 <b>/</b> 02</span></div>
+  <div class="upload" id="dropArea">
+    <div class="upload-icon">↥</div><h3>Sube una foto del insecto</h3><p>Elige una imagen clara donde se pueda ver el insecto.</p>
+    <div class="actions"><label class="button primary" for="imageInput">Elegir imagen</label><input id="imageInput" type="file" accept="image/*" capture="environment"><button class="button secondary" id="tipsButton">Consejos para la foto</button></div>
+    <small>JPG, PNG o WEBP · La identificación automática se integrará más adelante.</small>
+    <div class="preview" id="preview" hidden><img id="previewImage" alt="Vista previa"><div><strong id="fileName"></strong><p>Imagen lista para continuar con el desarrollo del escáner.</p></div><button id="removeImage" aria-label="Quitar imagen">×</button></div>
+  </div>
+  <div class="tips" id="tips" hidden><b>Para una mejor foto:</b><ul><li>Busca buena iluminación natural.</li><li>Enfoca el insecto y evita movimientos.</li><li>Mantén una distancia segura.</li></ul></div>
+</section>
+<section class="section discover" id="explorar">
+  <div class="heading"><div><span class="eyebrow">UN MUNDO POR DESCUBRIR</span><h2>Conoce a los pequeños habitantes</h2><p>Ejemplos de insectos que podrías encontrar cerca de tus plantas.</p></div><a class="text-link" href="#escanear">Probar escáner →</a></div>
+  <div class="cards">
+    <article class="card"><div class="bug-bg green-bg"><span>🐞</span><label>Aliada de las plantas</label></div><div class="card-content"><h3>Mariquita</h3><p>Puede ayudar a controlar poblaciones de pulgones y otros pequeños insectos.</p><a href="#escanear">Conocer más ↗</a></div></article>
+    <article class="card"><div class="bug-bg yellow-bg"><span>🐝</span><label>Polinizadora</label></div><div class="card-content"><h3>Abeja</h3><p>Muchas especies contribuyen a la polinización de plantas con flores.</p><a href="#escanear">Conocer más ↗</a></div></article>
+    <article class="card"><div class="bug-bg gray-bg"><span>🪰</span><label class="warning">Posible plaga</label></div><div class="card-content"><h3>Mosca blanca</h3><p>Algunas especies se alimentan de la savia y pueden afectar ciertos cultivos.</p><a href="#escanear">Conocer más ↗</a></div></article>
+  </div>
+  <small class="disclaimer">Información de ejemplo para la interfaz. La identificación y las recomendaciones específicas se incorporarán en futuras etapas.</small>
+</section>
+<section class="history" id="historial"><div class="history-icon">◷</div><div><h3>Tu exploración comienza aquí</h3><p>Cuando conectemos el escáner y el almacenamiento, podrás consultar tus identificaciones anteriores.</p></div><span>PRÓXIMAMENTE</span></section>
+</main>
+<footer><b>Grass on Bugs</b><span>Una mirada más cercana a la naturaleza.</span><span>Proyecto académico · Colombia</span></footer>
+<script src="script.js"></script>
+</body></html>
