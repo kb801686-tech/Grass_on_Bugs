@@ -1,0 +1,129 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 800">
+
+  <!-- DEGRADADOS Y SOMBRAS -->
+  <defs>
+  <style>
+  #hojas-medias > * {
+    filter: drop-shadow(2px 3px 2px rgba(0, 55, 25, 0.18));
+  }
+  </style>
+    <!-- Degradado de hojas intermedias -->
+    <linearGradient id="hoja-media" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#49D77A"></stop>
+      <stop offset="100%" stop-color="#159D4C"></stop>
+    </linearGradient>
+
+    <!-- Degradado de hojas delanteras -->
+    <linearGradient id="hoja-frontal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#117442"></stop>
+      <stop offset="100%" stop-color="#034326"></stop>
+    </linearGradient>
+
+    <!-- Sombra suave para hojas delanteras -->
+    <filter id="sombra-hoja" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="3" dy="4" stdDeviation="3" flood-color="#063E24" flood-opacity="0.28"></feDropShadow>
+    </filter>
+    
+  </defs>
+
+  <!-- FONDO DE VEGETACIÓN -->
+  <g fill="#A5EFC0" opacity=".85">
+    <path d="M0 30 Q70 -20 130 65 Q65 55 0 110Z"></path>
+    <path d="M0 190 Q65 110 155 180 Q75 185 0 255Z"></path>
+    <path d="M0 390 Q75 300 155 385 Q75 395 0 455Z"></path>
+    <path d="M0 600 Q65 510 155 590 Q75 605 0 670Z"></path>
+
+    <ellipse cx="155" cy="95" rx="17" ry="45" transform="rotate(45 155 95)"></ellipse>
+    <ellipse cx="175" cy="300" rx="16" ry="42" transform="rotate(-40 175 300)"></ellipse>
+    <ellipse cx="160" cy="510" rx="17" ry="45" transform="rotate(40 160 510)"></ellipse>
+    <ellipse cx="180" cy="720" rx="17" ry="45" transform="rotate(-35 180 720)"></ellipse>
+  </g>
+
+  <!-- ENREDADERAS -->
+  <g fill="none" stroke="#168D49" stroke-width="5" stroke-linecap="round">
+    <path d="M-10 0 Q70 80 35 160 T75 300 T25 450 T85 620 T40 800"></path>
+    <path d="M-10 240 Q70 270 90 350 T120 500"></path>
+    <path d="M-10 550 Q65 580 85 650 T130 780"></path>
+  </g>
+
+  <!-- HOJAS DE LAS ENREDADERAS -->
+  <g fill="#39C96B">
+    <path d="M35 100 Q75 35 105 85 Q75 125 35 100Z"></path>
+    <path d="M45 190 Q-5 130 20 105 Q65 140 45 190Z"></path>
+    <path d="M75 290 Q125 220 145 270 Q115 315 75 290Z"></path>
+    <path d="M30 410 Q-15 350 15 325 Q55 365 30 410Z"></path>
+    <path d="M70 520 Q125 450 145 500 Q110 545 70 520Z"></path>
+    <path d="M40 670 Q-5 615 20 590 Q65 630 40 670Z"></path>
+  </g>
+
+  <!-- ARBUSTOS VERDES PRINCIPALES -->
+  <g id="hojas-medias" fill="url(#hoja-media)">
+    <path d="M0 55 Q55 5 115 65 Q70 110 0 135Z"></path>
+    <path d="M0 235 Q75 145 135 225 Q65 270 0 300Z"></path>
+    <path d="M0 435 Q70 350 145 420 Q70 470 0 500Z"></path>
+    <path d="M0 645 Q75 555 145 635 Q70 685 0 720Z"></path>
+
+    <ellipse cx="95" cy="45" rx="25" ry="55" transform="rotate(40 95 45)"></ellipse>
+    <ellipse cx="145" cy="155" rx="25" ry="55" transform="rotate(-40 145 155)"></ellipse>
+    <ellipse cx="90" cy="255" rx="27" ry="55" transform="rotate(35 90 255)"></ellipse>
+    <ellipse cx="150" cy="355" rx="25" ry="55" transform="rotate(-35 150 355)"></ellipse>
+    <ellipse cx="95" cy="465" rx="27" ry="55" transform="rotate(40 95 465)"></ellipse>
+    <ellipse cx="150" cy="565" rx="25" ry="55" transform="rotate(-40 150 565)"></ellipse>
+    <ellipse cx="95" cy="680" rx="27" ry="55" transform="rotate(35 95 680)"></ellipse>
+  </g>
+
+  <!-- HOJAS DELANTERAS OSCURAS -->
+  <g fill="url(#hoja-frontal)" filter="url(#sombra-hoja)">
+    <path d="M0 0 Q75 25 105 105 Q40 85 0 125Z"></path>
+    <path d="M0 155 Q70 110 115 195 Q55 210 0 245Z"></path>
+    <path d="M0 350 Q70 285 120 370 Q50 395 0 425Z"></path>
+    <path d="M0 550 Q75 475 125 565 Q50 590 0 620Z"></path>
+    <path d="M0 740 Q75 675 130 760 L0 800Z"></path>
+
+    <ellipse cx="25" cy="90" rx="30" ry="65" transform="rotate(-35 25 90)"></ellipse>
+    <ellipse cx="60" cy="185" rx="30" ry="60" transform="rotate(40 60 185)"></ellipse>
+    <ellipse cx="25" cy="310" rx="30" ry="60" transform="rotate(-35 25 310)"></ellipse>
+    <ellipse cx="65" cy="410" rx="30" ry="60" transform="rotate(40 65 410)"></ellipse>
+    <ellipse cx="25" cy="510" rx="30" ry="60" transform="rotate(-35 25 510)"></ellipse>
+    <ellipse cx="65" cy="625" rx="30" ry="60" transform="rotate(40 65 625)"></ellipse>
+    <ellipse cx="25" cy="745" rx="30" ry="60" transform="rotate(-35 25 745)"></ellipse>
+  </g>
+
+<!-- REFLEJOS SUAVES DE LUZ -->
+<g fill="none"
+   stroke="#C4F7D3"
+   stroke-width="3"
+   stroke-linecap="round"
+   opacity=".32">
+
+  <path d="M12 55 Q35 35 65 38"/>
+  <path d="M12 250 Q40 220 72 220"/>
+  <path d="M12 450 Q40 420 75 420"/>
+  <path d="M12 660 Q42 625 75 630"/>
+
+</g>
+  <!-- NERVADURAS DE LAS HOJAS -->
+  <g fill="none"
+     stroke="#B2EFC0"
+     stroke-width="1.5"
+     stroke-linecap="round"
+     opacity=".38">
+
+    <path d="M8 75 Q45 65 91 100"/>
+    <path d="M8 210 Q55 180 105 190"/>
+    <path d="M8 390 Q55 355 110 370"/>
+    <path d="M8 590 Q55 545 115 565"/>
+    <path d="M10 770 Q65 710 115 745"/>
+
+  </g>
+
+  <!-- DESTELLOS DE HOJAS JÓVENES -->
+  <g fill="#D0F7D9" opacity=".75">
+    <ellipse cx="175" cy="50" rx="12" ry="30" transform="rotate(35 175 50)"></ellipse>
+    <ellipse cx="190" cy="260" rx="12" ry="30" transform="rotate(-35 190 260)"></ellipse>
+    <ellipse cx="175" cy="450" rx="12" ry="30" transform="rotate(35 175 450)"></ellipse>
+    <ellipse cx="190" cy="650" rx="12" ry="30" transform="rotate(-35 190 650)"></ellipse>
+  </g>
+
+</svg>
