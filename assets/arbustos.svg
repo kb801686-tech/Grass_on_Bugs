@@ -126,4 +126,53 @@
     <ellipse cx="190" cy="650" rx="12" ry="30" transform="rotate(-35 190 650)"></ellipse>
   </g>
 
+<!-- CATARINA SOBRE UNA HOJA -->
+<g transform="translate(105 420) rotate(-20) scale(0.85)">
+
+  <!-- Sombra -->
+  <ellipse cx="0" cy="7" rx="13" ry="8"
+           fill="#003D22" opacity="0.3"/>
+
+  <!-- Antenas -->
+  <g stroke="#17251B" stroke-width="1.5" fill="none"
+     stroke-linecap="round">
+    <path d="M8 -5 Q12 -12 15 -11"/>
+    <path d="M11 -4 Q17 -9 19 -7"/>
+  </g>
+
+  <!-- Patas -->
+  <g stroke="#17251B" stroke-width="1.5"
+     stroke-linecap="round">
+    <path d="M-5 -5 L-10 -10"/>
+    <path d="M-7 0 L-13 0"/>
+    <path d="M-5 5 L-10 10"/>
+    <path d="M3 -5 L6 -10"/>
+    <path d="M3 5 L6 10"/>
+  </g>
+
+  <!-- Cuerpo rojo -->
+  <ellipse cx="0" cy="0" rx="12" ry="9"
+           fill="#E52B2B" stroke="#17251B" stroke-width="1.2"/>
+
+  <!-- División de las alas -->
+  <path d="M-11 0 Q0 -2 11 0"
+      stroke="#17251B" stroke-width="1.2" fill="none"/>
+
+  <!-- Cabeza -->
+  <circle cx="10" cy="-1" r="5"
+          fill="#17251B"/>
+
+  <!-- Manchas negras -->
+  <g fill="#17251B">
+    <circle cx="-6" cy="-4" r="2"/>
+    <circle cx="2" cy="-5" r="1.8"/>
+    <circle cx="-6" cy="4" r="1.8"/>
+    <circle cx="3" cy="4" r="2"/>
+  </g>
+
+  <!-- Brillo -->
+  <ellipse cx="-5" cy="-5" rx="2" ry="1"
+           fill="#FFFFFF" opacity="0.45"/>
+</g>
+
 </svg>
