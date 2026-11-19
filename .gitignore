@@ -1,6 +1,11 @@
-node_modules/
+# Variables privadas
 .env
-.env.*
-!.env.example
-dist/
-build/
+backend/.env
+
+# Dependencias
+node_modules/
+backend/node_modules/
+
+# Archivos temporales
+*.log
+.DS_Store
